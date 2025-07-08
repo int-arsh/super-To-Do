@@ -45,9 +45,7 @@ export default function App() {
   const [todos, setTodos] = useState(() => { // useState with initializer to load from localStorage
     const saved = localStorage.getItem('super-todos') // Get todos from localStorage
     return saved ? JSON.parse(saved) : [ // If found, parse and use them
-      { id: 1, text: 'Learn React props', completed: false }, // Initial todo
-      { id: 2, text: 'Practice lifting state', completed: false }, // Initial todo
-      { id: 3, text: 'Understand conditional rendering', completed: false } // Initial todo
+      { id: 1, text: 'Try this app out!', completed: false }, // Initial todo
     ]
   })
 
